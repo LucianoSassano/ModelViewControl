@@ -1,3 +1,4 @@
+
 class Modelo {
     constructor(){
         this.asistentesPredeterminados = [["juan", "juan@mail.com", "28"],
@@ -10,4 +11,10 @@ class Modelo {
     agregar(asistente){
         this.asistentesPredeterminados(asistente);
     }
+    obtenerAsistentes(){
+        return this.asistentesPredeterminados;
+    }
 }
+
+export default Modelo
+

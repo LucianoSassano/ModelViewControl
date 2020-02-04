@@ -4,7 +4,7 @@ class Controlador {
 
     }
     agregar(asistente){
-        modelo.agregar(asistente);
+        this.modelo.agregar(asistente);
     }
     obtenerAsistentes(){
         return this.modelo.obtenerAsistentes();

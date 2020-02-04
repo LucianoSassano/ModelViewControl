@@ -1,16 +1,11 @@
-/*var asistentesPredeterminados = [
-    ["juan", "juan@mail.com", "28"],
-    ["Guido", "guido@mail.com", "22"],
-    ["Mia", "mia@mail.com", "16"],
-    ["tiziano", "tiziano@mail.com", "5"],
-    ["micaela", "micaela@mail.com", "12"],
-    ["martina", "martina@mail.com", "7"],
-  ]*/
-  
+import Modelo from "./modelo.js";
+import Controlador from "./controlador.js"
+
 const modelo = new Modelo();
+const controlador = new Controlador(modelo);
 
   document.addEventListener("DOMContentLoaded", function () {
-    cargarArrayAsistentes(modelo.obtenerAsistentes());
+    cargarArrayAsistentes(controlador.obtenerAsistentes());
     document.getElementById("formulario").addEventListener("submit", agregarRegistro);
   } );
   
